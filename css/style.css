@@ -4,6 +4,7 @@
     Theme Name: Frontend Seed 4
     Author:     trungnghia112 <trungnghia112@gmail.com>
 -----------------------------------------------------------------------------------*/
+@import '../fonts/fontawesome/css/all.min.css';
 /*!
  * Bootstrap v5.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -11123,6 +11124,13 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.nav-link {
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
 .scrollbar-measure {
   width: 100px;
   height: 100px;
@@ -11134,13 +11142,51 @@ textarea.form-control-lg {
 /* ==========================================================================
 Header
 ========================================================================== */
-.header .heading-txt {
-  text-align: center;
-  font-family: "Playfair Display", serif;
-  color: rgb(255, 234, 234);
-  font-size: 47.78px;
-  font-weight: bold;
-  line-height: 1.6;
+.header-logo {
+  height: 80px;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  margin-left: 98px;
+}
+
+.nav-link {
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.header .header-logo .brand-logo {
+  height: 80px;
+}
+.header .header-user {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  padding-left: 150px;
+}
+.header .btn {
+  border-radius: 100%;
+}
+.header .btn .btn-success {
+  bottom: -7px;
+}
+.header .dropdown {
+  position: relative;
+  bottom: -7px;
+}
+.header .dropdown-toggle::after {
+  content: none;
+}
+.header .link-cart {
+  font-size: 35px;
+  color: #198754;
 }
 
 /* ==========================================================================

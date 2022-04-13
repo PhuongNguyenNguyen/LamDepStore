@@ -1,13 +1,68 @@
 /* ==========================================================================
 Header
 ========================================================================== */
-.header{
-  .heading-txt {
-    text-align: center;
-    font-family: "Playfair Display", serif;
-    color: rgb(255, 234, 234);
-    font-size: 47.78px;
-    font-weight: bold;
-    line-height: 1.6;
+
+$green: #198754;
+
+.header-logo
+{
+  height: 80px;
+}
+
+.header-wrapper
+{
+  display: flex;
+  align-items: center;
+}
+
+.header-nav
+{
+  margin-left: 98px;
+}
+
+.nav-link
+{
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.header {
+  .header-logo {
+    .brand-logo {
+      height: 80px;
+    }
+  }
+
+  .header-user
+  {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    padding-left: 150px;
+  }
+
+  .btn
+  {
+      border-radius: 100%;
+    .btn-success
+    {
+      bottom: -7px;
+    }
+  }
+  .dropdown
+  {
+    position: relative;
+    bottom: -7px;
+  }
+  .dropdown-toggle::after
+  {
+    content: none;
+  }
+  .link-cart
+  {
+    font-size: 35px;
+    color: $green;
   }
 }
