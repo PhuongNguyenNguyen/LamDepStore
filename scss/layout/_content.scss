@@ -5,11 +5,12 @@ Content
   display: none;
 }
 
-.main{
-  .section-1{
+.main {
+  .section-1 {
   }
-  .section-flex{
+  .section-flex {
     @include flexbox();
   }
-
 }
+
+
