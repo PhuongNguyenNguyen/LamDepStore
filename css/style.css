@@ -11243,10 +11243,6 @@ Content
 /* ==========================================================================
 Footer
 ========================================================================== */
-.slick-dots {
-  display: none;
-}
-
 .slick-initialized .slick-slide {
   display: flex;
   flex-direction: column;
@@ -11254,7 +11250,7 @@ Footer
   height: 480px;
 }
 
-.section-3-js img:hover {
+.hot-slick-js img:hover {
   transition: all 0.3s;
   padding: 2rem 0;
   cursor: pointer;
@@ -11297,8 +11293,19 @@ Footer
 .section-2 .section-footer .link-more:hover {
   box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
 }
+.section-2 .hot-slick-js {
+  margin-bottom: 2rem;
+}
 
 .section-3 {
   background-color: #f8edfd;
+}
+.section-3 .slick-prev::before {
+  color: #db9ff7;
+  font-size: 5rem;
+}
+.section-3 .slick-next::before {
+  color: #db9ff7;
+  font-size: 5rem;
 }
 /*# sourceMappingURL=style.css.map */

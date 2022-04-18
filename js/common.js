@@ -33,13 +33,14 @@ if (Modernizr.touch === true && window.innerWidth <= 767) {
     return scrollbarWidth
   }
 
-  function section3Slick(){
-    $('.section-3-js').slick({
-      dots: true,
+  function section2Slick(){
+    $('.hot-slick-js').slick({
+      dots: false,
       infinite: false,
       speed: 300,
       slidesToShow: 4,
       slidesToScroll: 4,
+      arrows: true,
       responsive: [
         {
           breakpoint: 1024,
@@ -71,13 +72,14 @@ if (Modernizr.touch === true && window.innerWidth <= 767) {
     });
   }
 
-  function section4Slick(){
-    $('.section-4-js').slick({
-      dots: true,
+  function section3Slick() {
+    $('.hot-slick-js').slick({
+      dots: false,
       infinite: false,
       speed: 300,
       slidesToShow: 3,
       slidesToScroll: 1,
+      arrows: true,
       responsive: [
         {
           breakpoint: 1024,
@@ -101,18 +103,18 @@ if (Modernizr.touch === true && window.innerWidth <= 767) {
             slidesToShow: 1,
             slidesToScroll: 1
           }
-        }
+        },
         // You can unslick at a given breakpoint now by adding:
         // settings: "unslick"
         // instead of a settings object
-      ]
+      ],
     });
   }
 
   function init() {
     getBarwidth()
+    section2Slick()
     section3Slick()
-    section4Slick()
   }
 
   init()
