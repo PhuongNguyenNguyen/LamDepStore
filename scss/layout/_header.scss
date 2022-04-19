@@ -78,15 +78,18 @@ $green: #198754;
   opacity: 100%;
 }
 
-#carouselControls {
-  position: relative;
-  top: -40px;
-}
 .section-header {
-  padding-top: 2.5rem;
+  padding-top: 1.5rem;
   margin-bottom: 2.5rem;
   text-align: center;
   .section-title {
     text-transform: uppercase;
+  }
+}
+
+//breakpoint mobile
+@media (max-width: 575.98px) {
+  .section-title{
+    font-size: 3rem;
   }
 }

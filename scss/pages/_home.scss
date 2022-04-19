@@ -4,43 +4,37 @@ $color-pink: #f8edfd;
 $black: #000000;
 $color-btn-section3: #db9ff7;
 $color-ribbon: #e24040;
+$color-section5: #CEE7CF;
 
-.slick-initialized {
-  .slick-slide {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 480px;
-  }
-}
-
-.hot-slick-js img:hover {
-  transition: all 0.3s;
-  transform: translate(0,-10px);
-  cursor: pointer;
-}
-
-.fa-chevron-circle-left:before {
-  font-size: 70px;
-  color: #4d4d4d;
-}
-
-.fa-chevron-circle-right:before {
-  font-size: 70px;
-  color: #4d4d4d;
-}
-
-.section-2-js {
-  background-color: #d5f3df;
+.section-common {
+  padding: 2rem 0;
 }
 
 .section-1 {
   height: 475px;
+  .fa-chevron-circle-left:before {
+    font-size: 70px;
+    color: #4d4d4d;
+  }
+
+  .fa-chevron-circle-right:before {
+    font-size: 70px;
+    color: #4d4d4d;
+  }
+  #carouselControls {
+    position: relative;
+    top: -40px;
+  }
 }
 
 .section-2 {
   background-color: #d5f3df;
   padding: 2rem 0;
+  .hot-slick-js img:hover {
+    transition: all 0.3s;
+    transform: translate(0, -10px);
+    cursor: pointer;
+  }
 
   .slick-initialized {
     .slick-slide {
@@ -49,6 +43,10 @@ $color-ribbon: #e24040;
       justify-content: space-between;
       height: 480px;
     }
+  }
+
+  .section-2-js {
+    background-color: #d5f3df;
   }
 
   .section-footer {
@@ -176,18 +174,61 @@ $color-ribbon: #e24040;
       font-weight: 600;
     }
 
-    .card-img-top
-    {
+    .card-img-top {
       padding: 30px 0 50px 0;
     }
+    .img-slick-js {
+      .slick-slide {
+        height: fit-content;
+      }
+    }
   }
-  .card:hover
-  {
+
+  .card:hover {
     cursor: pointer;
     transform: translate(0, -10px);
   }
-  .hot-slick-js-3
-  {
+  .hot-slick-js-3 {
     justify-content: center;
   }
 }
+
+.section-4 {
+  .new-product
+  {
+    .row
+    {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .new-product-img{
+      width: 100%;
+      height: 100%;
+      padding: 0.5rem ;
+    }
+    .new-product-img:hover
+    {
+      transition: all 0.3s;
+      transform: translate(0,-10px);
+      cursor: pointer;
+    }
+  }
+
+}
+
+.section-5
+{
+  .container
+  {
+    background-color: $color-section5;
+  }
+
+  .new-product-img:hover
+  {
+    cursor: pointer;
+    transition: all 0.3s;
+    transform: translate(0,-10px);
+  }
+}
+
