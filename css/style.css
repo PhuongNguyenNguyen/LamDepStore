@@ -11252,7 +11252,7 @@ Footer
 
 .hot-slick-js img:hover {
   transition: all 0.3s;
-  padding: 2rem 0;
+  transform: translate(0, -10px);
   cursor: pointer;
 }
 
@@ -11278,6 +11278,12 @@ Footer
   background-color: #d5f3df;
   padding: 2rem 0;
 }
+.section-2 .slick-initialized .slick-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 480px;
+}
 .section-2 .section-footer {
   text-align: center;
 }
@@ -11300,12 +11306,102 @@ Footer
 .section-3 {
   background-color: #f8edfd;
 }
+.section-3 .slick-initialized .slick-slide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 480px;
+}
 .section-3 .slick-prev::before {
   color: #db9ff7;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 .section-3 .slick-next::before {
   color: #db9ff7;
-  font-size: 5rem;
+  font-size: 4rem;
+}
+.section-3 .slick-next {
+  width: fit-content;
+  height: fit-content;
+  z-index: 1;
+}
+.section-3 .slick-prev {
+  width: fit-content;
+  height: fit-content;
+  z-index: 1;
+}
+.section-3 .card {
+  width: 250px;
+  height: fit-content;
+  transition: all 0.3s;
+  border-radius: 20px;
+  margin: 1rem 0;
+}
+.section-3 .card .ribbon {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+.section-3 .card .ribbon span {
+  position: absolute;
+  display: block;
+  width: 160px;
+  background-color: #e24040;
+  color: #fff;
+  font-weight: 600;
+  padding: 2px 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.2rem;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.section-3 .card .ribbon .ribbon::before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  display: block;
+}
+.section-3 .card .ribbon .ribbon::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  display: block;
+}
+.section-3 .card .ribbon-top-right {
+  top: 0;
+  right: 0;
+}
+.section-3 .card .ribbon-top-right span {
+  transform: rotate(45deg);
+  top: 20px;
+  left: -30px;
+}
+.section-3 .card .line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.section-3 .card .card-title {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.section-3 .card .card-text {
+  font-size: 0.9rem;
+  color: gray;
+  text-decoration: line-through;
+  font-weight: 600;
+}
+.section-3 .card .card-img-top {
+  padding: 30px 0 50px 0;
+}
+.section-3 .card:hover {
+  cursor: pointer;
+  transform: translate(0, -10px);
+}
+.section-3 .hot-slick-js-3 {
+  justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */

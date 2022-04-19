@@ -73,13 +73,15 @@ if (Modernizr.touch === true && window.innerWidth <= 767) {
   }
 
   function section3Slick() {
-    $('.hot-slick-js').slick({
+    $('.hot-slick-js-3').slick({
       dots: false,
       infinite: false,
       speed: 300,
       slidesToShow: 3,
       slidesToScroll: 1,
       arrows: true,
+      autoplay: true,
+      autoplaySpeed: 8000,
       responsive: [
         {
           breakpoint: 1024,
