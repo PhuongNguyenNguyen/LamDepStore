@@ -11,7 +11,7 @@ if (Modernizr.touch === true && window.innerWidth <= 767) {
 
 }
 
-(function() {
+(function () {
   'use strict'
 
   /* ==================================================
@@ -33,7 +33,7 @@ if (Modernizr.touch === true && window.innerWidth <= 767) {
     return scrollbarWidth
   }
 
-  function section2Slick(){
+  function section2Slick() {
     $('.hot-slick-js').slick({
       dots: false,
       infinite: false,
@@ -154,11 +154,65 @@ if (Modernizr.touch === true && window.innerWidth <= 767) {
     });
   }
 
+  function countDownProduct() {
+    function getTimeRemaining(endtime) {
+      const total = Date.parse(endtime) - Date.parse(new Date());
+      const seconds = Math.floor((total / 1000) % 60);
+      const minutes = Math.floor((total / 1000 / 60) % 60);
+      const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
+      // const days = Math.floor(total / (1000 * 60 * 60 * 24));
+
+      return {
+        total,
+        // days,
+        hours,
+        minutes,
+        seconds
+      };
+    }
+
+    function initializeClock(id, endTime) {
+      if (document.getElementById(id)) {
+        const clock = document.getElementById(id);
+        // const daysSpan = clock.querySelector('.days');
+        const hoursSpan = clock.querySelector('.hours');
+        const minutesSpan = clock.querySelector('.minutes');
+        const secondsSpan = clock.querySelector('.seconds');
+
+        function updateClock() {
+          const t = getTimeRemaining(endTime);
+
+          // daysSpan.innerHTML = t.days;
+          hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+          minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+          secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+          if (t.total <= 0) {
+            clearInterval(timeInterval);
+          }
+        }
+
+        updateClock();
+        const timeInterval = setInterval(updateClock, 1000);
+      }
+    }
+
+    const deadline1 = 'April 21 2022 21:00:00 UTC+7';
+    const deadline2 = 'April 22 2022 22:00:00 UTC+7';
+    const deadline3 = 'April 23 2022 23:00:00 UTC+7';
+
+    initializeClock('countDown1', deadline1);
+    initializeClock('countDown2', deadline2);
+    initializeClock('countDown3', deadline3);
+  }
+
+
   function init() {
     getBarwidth()
     section2Slick()
     section3Slick()
-    imgSlick();
+    imgSlick()
+    countDownProduct()
   }
 
   init()

@@ -11141,6 +11141,104 @@ textarea.form-control-lg {
   top: -9999px;
 }
 
+#countDown {
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  width: fit-content;
+  margin: 6rem auto 3rem auto;
+  background-color: rgba(16, 53, 101, 0.5803921569);
+  position: relative;
+}
+
+@media (max-width: 991.98px) {
+  #countDown {
+    margin: 3rem auto;
+  }
+}
+.count-down-wrapper {
+  padding: 0 0.6rem;
+  text-align: center;
+}
+
+.count-down-wrapper .days,
+.count-down-wrapper .hours,
+.count-down-wrapper .minutes,
+.count-down-wrapper .seconds {
+  font-size: 3.5rem;
+  font-weight: 900;
+  background: linear-gradient(180deg, rgb(9, 9, 121) 0%, rgb(8, 49, 218) 30%, rgb(255, 0, 61) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.count-down-wrapper .small-text {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.count-down-wrapper > div {
+  display: inline-block;
+}
+
+.count-down-wrapper .time {
+  width: 90px;
+}
+
+.count-down-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  -webkit-align-items: baseline;
+  -moz-align-items: baseline;
+  align-items: baseline;
+}
+
+.count-down-wrapper .time > span {
+  display: inline-block;
+}
+
+.seperated {
+  font-size: 3rem;
+  font-weight: 900;
+  background: linear-gradient(180deg, rgb(9, 9, 121) 0%, rgb(8, 49, 218) 30%, rgb(255, 0, 61) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 991.98px) {
+  .days,
+.hours,
+.minutes,
+.seconds {
+    font-size: 2.5rem !important;
+  }
+
+  .seperated {
+    font-size: 2rem !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .count-down-wrapper {
+    padding: 0 5px;
+  }
+
+  .count-down-wrapper .time {
+    width: 75px;
+  }
+}
 /* ==========================================================================
 Header
 ========================================================================== */
@@ -11240,6 +11338,31 @@ Content
   display: flex;
 }
 
+ul#countdown {
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px 0 20px 0;
+  color: #dd0b17;
+  overflow: hidden;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+}
+ul#countdown li {
+  margin: 0 -3px 0 0;
+  padding: 0;
+  display: inline-block;
+  width: 25%;
+  font-size: 72px;
+  font-size: 3rem;
+  text-align: center;
+}
+ul#countdown li .label {
+  color: #adafb2;
+  font-size: 18px;
+  font-size: 1.5vw;
+  text-transform: uppercase;
+}
+
 /* ==========================================================================
 Footer
 ========================================================================== */
@@ -11289,12 +11412,12 @@ Footer
   padding: 0.9rem 3rem;
   background-color: #f8f8f8;
   font-weight: 600;
-  border-radius: 20px;
+  border-radius: 10px;
   text-decoration: none;
   color: #1a1e21;
 }
 .section-2 .section-footer .link-more:hover {
-  box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
 }
 .section-2 .hot-slick-js {
   margin-bottom: 2rem;
@@ -11420,12 +11543,44 @@ Footer
   cursor: pointer;
 }
 
-.section-5 .container {
-  background-color: #CEE7CF;
+.section-5 {
+  background-color: #cee7cf;
 }
 .section-5 .new-product-img:hover {
   cursor: pointer;
   transition: all 0.3s;
   transform: translate(0, -10px);
+}
+
+.section-6 #section-6-img {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.footer {
+  background-color: #000000;
+  color: rgba(248, 248, 248, 0.7);
+}
+.footer a {
+  text-decoration: none;
+  color: rgba(248, 248, 248, 0.7);
+}
+.footer h5, .footer .h5 {
+  color: #f8f8f8;
+}
+.footer .footer-block {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  padding: 40px 0 30px;
+  position: relative;
+}
+.footer .footer-block .footer-right .column {
+  width: 28%;
+}
+.footer .footer-block .column {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */
