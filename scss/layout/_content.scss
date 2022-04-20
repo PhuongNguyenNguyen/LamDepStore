@@ -12,30 +12,3 @@ Content
     @include flexbox();
   }
 }
-
-ul#countdown {
-  width: 100%;
-  margin: 0 auto;
-  padding: 15px 0 20px 0;
-  color: #dd0b17;
-  overflow: hidden;
-  font-family: 'Arial Narrow', Arial, sans-serif;
-  font-weight: bold;
-
-  li {
-    margin: 0 -3px 0 0;
-    padding: 0;
-    display: inline-block;
-    width: 25%;
-    font-size: 72px;
-    font-size: 3rem;
-    text-align: center;
-
-    .label {
-      color: #adafb2;
-      font-size: 18px;
-      font-size: 1.5vw;
-      text-transform: uppercase;
-    }
-  }
-}

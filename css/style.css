@@ -11141,23 +11141,6 @@ textarea.form-control-lg {
   top: -9999px;
 }
 
-#countDown {
-  color: #fff;
-  display: inline-block;
-  font-weight: bold;
-  text-align: center;
-  font-size: 30px;
-  width: fit-content;
-  margin: 6rem auto 3rem auto;
-  background-color: rgba(16, 53, 101, 0.5803921569);
-  position: relative;
-}
-
-@media (max-width: 991.98px) {
-  #countDown {
-    margin: 3rem auto;
-  }
-}
 .count-down-wrapper {
   padding: 0 0.6rem;
   text-align: center;
@@ -11336,31 +11319,6 @@ Content
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-ul#countdown {
-  width: 100%;
-  margin: 0 auto;
-  padding: 15px 0 20px 0;
-  color: #dd0b17;
-  overflow: hidden;
-  font-family: "Arial Narrow", Arial, sans-serif;
-  font-weight: bold;
-}
-ul#countdown li {
-  margin: 0 -3px 0 0;
-  padding: 0;
-  display: inline-block;
-  width: 25%;
-  font-size: 72px;
-  font-size: 3rem;
-  text-align: center;
-}
-ul#countdown li .label {
-  color: #adafb2;
-  font-size: 18px;
-  font-size: 1.5vw;
-  text-transform: uppercase;
 }
 
 /* ==========================================================================
