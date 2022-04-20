@@ -222,6 +222,42 @@ $color-footer: #4f5050;
     transition: all 0.3s;
     transform: translate(0, -10px);
   }
+
+  .pulse-wrapper {
+    position: relative;
+    right: 0;
+
+
+
+    .pulse {
+      position: absolute;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+      width: 71px;
+      height: 71px;
+      background-image: url("https://chhuy.github.io/lamdepstore-landingpage/images/pulse.png");
+      background-size: cover;
+
+      animation-name: pulse;
+      -webkit-animation-name: pulse;
+      animation-delay: 1s;
+      -webkit-animation-delay: 1s;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      animation-iteration-count: infinite;
+      -webkit-animation-iteration-count: infinite;
+
+      .pulse-text {
+        font-weight: 700;
+        color: $white-color;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
 }
 
 .section-6 {
@@ -232,40 +268,44 @@ $color-footer: #4f5050;
   }
 }
 
-.footer
-{
-  background-color: $black;
-  color: rgba($white-color, 0.7);
 
-  a
-  {
-    text-decoration: none;
-    color: rgba($white-color, 0.7);
+
+// animation pulse
+@-webkit-keyframes pulse{
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
-
-  h5
-  {
-    color: $white-color;
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
   }
-
-  .footer-block {
-    display: inline-block;
-    vertical-align: top;
-    width: 100%;
-    padding: 40px 0 30px;
-    position: relative;
-
-    .footer-right {
-      .column {
-        width: 28%;
-      }
-
-    }
-
-    .column {
-      float: left;
-      padding-left: 10px;
-      padding-right: 10px;
-    }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
 }
+
+@keyframes pulse{
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.pulse{
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+

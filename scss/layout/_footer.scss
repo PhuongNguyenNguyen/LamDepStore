@@ -1,3 +1,43 @@
 /* ==========================================================================
 Footer
 ========================================================================== */
+.footer {
+  background-color: $black;
+  color: rgba($white-color, 0.7);
+
+  a {
+    text-decoration: none;
+    color: rgba($white-color, 0.7);
+  }
+
+  .column li a:hover
+  {
+    color: red;
+  }
+
+  h5 {
+    color: $white-color;
+  }
+
+  .footer-block {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding: 40px 0 30px;
+    position: relative;
+
+    .footer-right {
+      .column {
+        width: 28%;
+      }
+
+    }
+
+    .column {
+      float: left;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+}
