@@ -127,6 +127,46 @@
     <header class='header' id='header'>
       <div class="container-fluid">
         <div class="header-wrapper">
+          <!--Menu-mobile-->
+          <div class="menu-mb">
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <i class="fas fa-bars"></i>
+          </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <!--<h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>-->
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <ul class="mobile-menu">
+                  <li class="mobile-menu_line">
+                    <a href="" target="_blank" class="mobile-menu-line_text">Thương hiệu</a>
+                  </li>
+                  <li class="mobile-menu_line">
+                    <a href="" target="_blank" class="mobile-menu-line_text">Mỹ phẩm làm đẹp</a>
+                  </li>
+                  <li class="mobile-menu_line">
+                    <a href="" target="_blank" class="mobile-menu-line_text">Thực phẩm chức năng</a>
+                  </li>
+                  <li class="mobile-menu_line">
+                    <a href="" target="_blank" class="mobile-menu-line_text">Chăm sóc sức khỏe</a>
+                  </li>
+                </ul>
+              </div>
+              <!--<div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                  Dropdown button
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>-->
+            </div>
+          </div>
+          </div>
           <!--Logo-->
           <div class="header-logo">
             <a href="https://lamdepstore.vn">
@@ -192,7 +232,7 @@
             <div class="search-wrapper container">
               <div id="search-form" class="flex-inline">
                 <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Bạn đang cần tìm sản phẩm nào?" aria-label="Username" aria-describedby="basic-addon1">
+                  <input type="text" class="form-control" placeholder="Tìm?" aria-label="Username" aria-describedby="basic-addon1">
                   <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
                 </div>
               </div>
@@ -254,7 +294,6 @@
                 <a target="_blank" href="#"><img src="images/bg/imfrom.png" alt="Im'From" title=""></a>
               </div>
           </div>
-
           <div class="section-footer">
             <a class="link-more" href="https://lamdepstore.vn/thuong-hieu" target="_blank" title="lamdepstore">Xem thêm</a>
           </div>
@@ -447,7 +486,7 @@
       <div class="section-5 section-common">
         <div class="container">
           <div class="section-header">
-            <h4 class="section-title">Chương trình khuyến mãi</h4>
+            <h4 class="section-title" id="section-5-title">Chương trình khuyến mãi</h4>
           </div>
           <div class="new-product">
             <div class="row">
@@ -624,6 +663,9 @@
     </footer>
 
   </div>
+
+
+
 
   <!-- Optional JavaScript -->
   <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js'

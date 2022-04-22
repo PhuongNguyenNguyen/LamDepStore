@@ -1,6 +1,10 @@
 /* ==========================================================================
 Footer
 ========================================================================== */
+
+$white-color: #fff;
+$black: #000000;
+
 .footer {
   background-color: $black;
   color: rgba($white-color, 0.7);
@@ -10,8 +14,7 @@ Footer
     color: rgba($white-color, 0.7);
   }
 
-  .column li a:hover
-  {
+  .column li a:hover {
     color: red;
   }
 
@@ -30,7 +33,6 @@ Footer
       .column {
         width: 28%;
       }
-
     }
 
     .column {
@@ -39,5 +41,4 @@ Footer
       padding-right: 10px;
     }
   }
-
 }

@@ -12,23 +12,33 @@ $color-footer: #4f5050;
 }
 
 .section-1 {
-  height: 475px;
   .fa-chevron-circle-left:before {
     font-size: 70px;
     color: #4d4d4d;
+    @media (max-width: 576px) {
+      font-size: 45px;
+      color: #0c4128;
+      left: 5px;
+      position: relative;
+    }
   }
 
   .fa-chevron-circle-right:before {
     font-size: 70px;
     color: #4d4d4d;
+    @media (max-width: 576px) {
+      font-size: 45px;
+      color: #0c4128;
+      position: relative;
+      right: 5px;
+    }
   }
   #carouselControls {
     position: relative;
-    top: -40px;
   }
 }
 
-.section-2 {
+  .section-2 {
   background-color: #d5f3df;
   padding: 2rem 0;
   .hot-slick-js img:hover {
@@ -63,12 +73,33 @@ $color-footer: #4f5050;
       color: #1a1e21;
     }
     .link-more:hover {
-      box-shadow: 0 3px 8px rgba(0,0,0, 24%);
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 24%);
     }
   }
+
   .hot-slick-js {
     margin-bottom: 2rem;
+
+    .slick-list {
+      text-align: -webkit-center;
+    }
+
+    .slick-prev:before,
+    {
+      font-size: 40px;
+      color: #0f7c67;
+      margin-left: 20px ;
+    }
+
+    .slick-next:before
+    {
+      font-size: 40px;
+      color: #0f7c67;
+      position: relative;
+      right: 35px;
+    }
   }
+
 }
 
 .section-3 {
@@ -217,6 +248,11 @@ $color-footer: #4f5050;
 .section-5 {
   background-color: $color-section5;
 
+  .new-product-img{
+    width: 100%;
+    height: 100%;
+  }
+
   .new-product-img:hover {
     cursor: pointer;
     transition: all 0.3s;
@@ -227,8 +263,6 @@ $color-footer: #4f5050;
     position: relative;
     right: 0;
 
-
-
     .pulse {
       position: absolute;
       right: 0;
@@ -238,7 +272,7 @@ $color-footer: #4f5050;
       z-index: 1;
       width: 71px;
       height: 71px;
-      background-image: url("https://chhuy.github.io/lamdepstore-landingpage/images/pulse.png");
+      background-image: url('https://chhuy.github.io/lamdepstore-landingpage/images/pulse.png');
       background-size: cover;
 
       animation-name: pulse;
@@ -257,21 +291,17 @@ $color-footer: #4f5050;
       }
     }
   }
-
 }
 
 .section-6 {
-  #section-6-img
-  {
+  #section-6-img {
     width: 100%;
-    padding:0 20px;
+    padding: 0 20px;
   }
 }
 
-
-
 // animation pulse
-@-webkit-keyframes pulse{
+@-webkit-keyframes pulse {
   0% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -286,7 +316,7 @@ $color-footer: #4f5050;
   }
 }
 
-@keyframes pulse{
+@keyframes pulse {
   0% {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -304,8 +334,10 @@ $color-footer: #4f5050;
   }
 }
 
-.pulse{
+.pulse {
   -webkit-animation-name: pulse;
   animation-name: pulse;
 }
 
+
+//mobile

@@ -25,52 +25,78 @@ $green: #198754;
 }
 
 .header {
-  .header-logo {
-    .brand-logo {
-      height: 80px;
+  @include media-breakpoint-down(xl) {
+    .header-nav {
+      display: none;
     }
   }
 
-  .header-user {
-    display: flex;
-    width: 200px;
+  .header-wrapper {
     justify-content: space-between;
-    padding-left: 150px;
-  }
+    .header-logo {
+      .brand-logo {
+        height: 80px;
+      }
+    }
 
-  .btn {
-    border-radius: 100%;
-    .btn-success {
+    .header-user {
+      display: flex;
+    }
+
+    .btn {
+      .btn-success {
+        bottom: -7px;
+      }
+    }
+    #dropdownUser {
+      border-radius: 100%;
+    }
+    .dropdown {
+      position: relative;
       bottom: -7px;
     }
-  }
-  .dropdown {
-    position: relative;
-    bottom: -7px;
-  }
-  .dropdown-toggle::after {
-    content: none;
-  }
-  .link-cart {
-    font-size: 35px;
-    color: $green;
+    .dropdown-toggle::after {
+      content: none;
+    }
+    .link-cart {
+      font-size: 35px;
+      color: $green;
+    }
   }
 }
 
-.input-group {
-  opacity: 0.5;
-  width: 1050px;
-  margin-left: 100px;
-  position: relative;
-  top: 10px;
-  z-index: 1;
-  #basic-addon1 {
-    border-radius: 0 20px 20px 0;
-  }
+#search-form {
+  display: flex;
+  justify-content: center;
+  .input-group {
+    opacity: 0.5;
+    width: 75%;
+    position: absolute;
+    //chuan cho PC
+    /*margin-left: 100px;
+    position: relative;
+    top: 10px;*/
 
-  .form-control {
-    border-radius: 20px;
-    font-weight: bold;
+    z-index: 1;
+
+    #basic-addon1 {
+      border-radius: 0 20px 20px 0;
+      cursor: pointer;
+      outline: none;
+      border-left: 0;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .form-control {
+      border-radius: 20px 0 0 20px;
+      font-weight: bold;
+      outline: none;
+      border: 1px solid rgba(0, 0, 0, 0.09);
+      border-right: 0;
+    }
+    .form-control:focus {
+      box-shadow: none;
+    }
   }
 }
 
@@ -87,9 +113,47 @@ $green: #198754;
   }
 }
 
+.menu-mb {
+  .btn-primary {
+    background-color: rgba(255, 255, 255);
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10%;
+  }
+
+  //Dich nut dong menu sang phai
+  .offcanvas-header {
+    justify-content: flex-end;
+  }
+
+  .mobile-menu {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .mobile-menu_line {
+      list-style: none;
+
+      .mobile-menu-line_text {
+        text-decoration: none;
+        color: #1a1e21;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+    }
+    .mobile-menu_line:hover {
+      background-color: #99cc66;
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    display: none;
+  }
+}
+
 //breakpoint mobile
 @media (max-width: 575.98px) {
   .section-title {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }

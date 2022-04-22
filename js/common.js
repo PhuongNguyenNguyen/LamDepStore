@@ -52,7 +52,7 @@ if (Modernizr.touch === true && window.innerWidth <= 767) {
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 768,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2
@@ -197,9 +197,9 @@ if (Modernizr.touch === true && window.innerWidth <= 767) {
       }
     }
 
-    const deadline1 = 'April 21 2022 21:00:00 UTC+7';
-    const deadline2 = 'April 22 2022 22:00:00 UTC+7';
-    const deadline3 = 'April 23 2022 23:00:00 UTC+7';
+    const deadline1 = 'April 30 2022 21:00:00 UTC+7';
+    const deadline2 = 'April 30 2022 22:00:00 UTC+7';
+    const deadline3 = 'April 30 2022 23:00:00 UTC+7';
 
     initializeClock('countDown1', deadline1);
     initializeClock('countDown2', deadline2);
