@@ -98,7 +98,7 @@ if (Modernizr.touch === true && window.innerWidth <= 767) {
           }
         },
         {
-          breakpoint: 510,
+          breakpoint: 575,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1
@@ -120,33 +120,10 @@ if (Modernizr.touch === true && window.innerWidth <= 767) {
       slidesToScroll: 1,
       arrows: false,
       autoplay: true,
-      autoplaySpeed: 3000,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        },
+      autoplaySpeed: 3000
         // You can unslick at a given breakpoint now by adding:
         // settings: "unslick"
         // instead of a settings object
-      ],
     });
   }
 
