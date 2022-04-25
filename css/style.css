@@ -11490,23 +11490,27 @@ Footer
 .section-2 .hot-slick-js .slick-list {
   text-align: -webkit-center;
 }
+.section-2 .hot-slick-js .slick-prev {
+  width: fit-content;
+  height: fit-content;
+}
 .section-2 .hot-slick-js .slick-prev:before {
   font-size: 40px;
   color: #0f7c67;
   margin-left: 20px;
 }
+.section-2 .hot-slick-js .slick-next {
+  width: fit-content;
+  height: fit-content;
+  transform: translate(-30px, -19px);
+}
 .section-2 .hot-slick-js .slick-next:before {
   font-size: 40px;
   color: #0f7c67;
-  position: relative;
-  right: 35px;
 }
 
 .section-3 {
   background-color: #f8edfd;
-}
-.section-3 .section-title {
-  padding-top: 30px;
 }
 .section-3 .slick-initialized .slick-slide {
   display: flex;

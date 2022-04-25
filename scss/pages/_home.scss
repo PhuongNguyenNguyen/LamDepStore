@@ -88,6 +88,11 @@ $color-footer: #4f5050;
     .slick-list {
       text-align: -webkit-center;
     }
+    .slick-prev
+    {
+      width: fit-content;
+      height: fit-content;
+    }
 
     .slick-prev:before {
       font-size: 40px;
@@ -95,12 +100,18 @@ $color-footer: #4f5050;
       margin-left: 20px;
     }
 
+    .slick-next
+    {
+      width: fit-content;
+      height: fit-content;
+      transform: translate(-30px,-19px);
+    }
+
     .slick-next:before {
       font-size: 40px;
       color: #0f7c67;
-      position: relative;
-      right: 35px;
     }
+
   }
 }
 
@@ -108,7 +119,6 @@ $color-footer: #4f5050;
   background-color: $color-pink;
 
   .section-title {
-    padding-top: 30px;
   }
 
   .slick-initialized {
