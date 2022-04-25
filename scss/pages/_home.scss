@@ -38,9 +38,14 @@ $color-footer: #4f5050;
   }
 }
 
-  .section-2 {
+.section-2 {
   background-color: #d5f3df;
   padding: 2rem 0;
+
+  .hot-slick-js img {
+    transition: all 0.3s;
+  }
+
   .hot-slick-js img:hover {
     transition: all 0.3s;
     transform: translate(0, -10px);
@@ -51,7 +56,7 @@ $color-footer: #4f5050;
     .slick-slide {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: space-around;
       height: 480px;
     }
   }
@@ -62,6 +67,7 @@ $color-footer: #4f5050;
 
   .section-footer {
     text-align: center;
+    margin-bottom: 15px;
 
     .link-more {
       text-align: center;
@@ -84,26 +90,27 @@ $color-footer: #4f5050;
       text-align: -webkit-center;
     }
 
-    .slick-prev:before,
-    {
+    .slick-prev:before {
       font-size: 40px;
       color: #0f7c67;
-      margin-left: 20px ;
+      margin-left: 20px;
     }
 
-    .slick-next:before
-    {
+    .slick-next:before {
       font-size: 40px;
       color: #0f7c67;
       position: relative;
       right: 35px;
     }
   }
-
 }
 
 .section-3 {
   background-color: $color-pink;
+
+  .section-title {
+    padding-top: 30px;
+  }
 
   .slick-initialized {
     .slick-slide {
@@ -117,10 +124,18 @@ $color-footer: #4f5050;
   .slick-prev::before {
     color: $color-btn-section3;
     font-size: 4rem;
+    @media (max-width: 580px) {
+      position: relative;
+      left: 20px;
+    }
   }
   .slick-next::before {
     color: $color-btn-section3;
     font-size: 4rem;
+    @media (max-width: 580px) {
+      position: relative;
+      right: 15px;
+    }
   }
   .slick-next {
     width: fit-content;
@@ -138,7 +153,7 @@ $color-footer: #4f5050;
     width: 250px;
     height: fit-content;
     transition: all 0.3s;
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 1rem 0;
 
     .ribbon {
@@ -235,10 +250,10 @@ $color-footer: #4f5050;
     .new-product-img {
       width: 100%;
       height: 100%;
-      padding: 0.5rem;
+      padding: 0.5rem 0;
+      transition: all 0.3s;
     }
     .new-product-img:hover {
-      transition: all 0.3s;
       transform: translate(0, -10px);
       cursor: pointer;
     }
@@ -248,14 +263,16 @@ $color-footer: #4f5050;
 .section-5 {
   background-color: $color-section5;
 
-  .new-product-img{
+  .new-product-img {
     width: 100%;
     height: 100%;
   }
-
-  .new-product-img:hover {
-    cursor: pointer;
+  .pulse-wrapper {
     transition: all 0.3s;
+  }
+
+  .pulse-wrapper:hover {
+    cursor: pointer;
     transform: translate(0, -10px);
   }
 
@@ -338,6 +355,5 @@ $color-footer: #4f5050;
   -webkit-animation-name: pulse;
   animation-name: pulse;
 }
-
 
 //mobile

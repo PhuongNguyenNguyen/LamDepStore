@@ -13,15 +13,11 @@ $green: #198754;
   align-items: center;
 }
 
-.header-nav {
-  margin-left: 98px;
-}
-
 .nav-link {
   color: black;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 .header {
@@ -68,16 +64,29 @@ $green: #198754;
 #search-form {
   display: flex;
   justify-content: center;
+  position: relative;
   .input-group {
     opacity: 0.5;
-    width: 75%;
+    width: 58%;
     position: absolute;
+    top: 20px;
     //chuan cho PC
     /*margin-left: 100px;
     position: relative;
     top: 10px;*/
 
     z-index: 1;
+
+    @include media-breakpoint-down(md) {
+      top: 130px;
+    }
+
+    @media (max-width: 524px) {
+      top: 100px;
+    }
+
+    @include media-breakpoint-between(xs, md) {
+    }
 
     #basic-addon1 {
       border-radius: 0 20px 20px 0;
@@ -110,6 +119,7 @@ $green: #198754;
   text-align: center;
   .section-title {
     text-transform: uppercase;
+    font-weight: 700;
   }
 }
 
